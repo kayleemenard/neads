@@ -1,4 +1,0 @@
-markdown: redcarpet
-permalink: pretty
-baseurl: ""
-exclude: ['neads-template.md']
