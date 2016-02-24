@@ -1,0 +1,10 @@
+ <nav class="nav nav-top nav-collapse" role="navigation" id="nav-main">
+            <ul class="nav-links ">
+                <li><a href="{{site.baseurl}}/"> <img class="logo" src="{{site.baseurl}}/images/logo.jpg" alt="NEADS's Logo" aria-label="Go back to the home screen"></a></li>
+                <li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}nav-current{% endif %}"> ABOUT</a></li>
+                <li><a href="{{site.baseurl}}/about/" class="{% if page.url == '/about/' %}nav-current{% endif %}" >SERVICE</a></li>
+            
+                <li><a href="{{site.baseurl}}/contact/" class="illogo {% if page.url == '/contact/' %}nav-current{% endif %}">GIVE</a></li>
+                <li><a href="{{site.baseurl}}/extras/" class="typelogo {% if page.url == '/extras/' %}nav-current{% endif %}">RESOURCE</a></li>
+     </ul>
+        </nav>
