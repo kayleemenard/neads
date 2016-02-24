@@ -151,7 +151,7 @@ h1{
   .toggle-btn,
   .close-btn{
     display: none;
-      @include element-invisible
+      @include element-invisible;
   }
     .navigation ul{
         display: inline-block;
