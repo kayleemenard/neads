@@ -43,25 +43,21 @@ header {
 
 .navigation {
     
-    ul{
-        padding:0; 
+ul{
+  padding:0; 
+  li{
+    list-style-type: none;
+    &::hover{
+      background-color: $mustard-yellow; 
     }
-    
-    li{
-        list-style-type: none;
-    }
-    
-    a{
-        padding: 0.5em 1em;
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        color: $text-color;
-    }
-    
-    li:hover{
-       background-color: $mustard-yellow;
-    }
+  }
+  a{
+      padding: 0.5em 1em;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: $text-color;
+  }
 }
 
 .toggle-btn,
@@ -109,13 +105,10 @@ footer {
   }
   ul {
     @include zero;
-    display: inline-block;
-    float: left;
     li {
       @include zero;
       color: $white;
       list-style-type: none;
-      text-align: left;
       text-decoration: none;
     }
   }
@@ -182,16 +175,15 @@ footer {
     display: none;
       @include element-invisible;
   }
-    .navigation ul{
-        display: inline-block;
-        position: absolute;
-        right: 1em;
-        top: 1.5em;
-    }
-    
+  .navigation ul{
+      display: inline-block;
+      position: absolute;
+      right: 1em;
+      top: 1.5em;
     li {
-        display: inline-block;
+      display: inline-block;
     }
+  }
 }
 
 
