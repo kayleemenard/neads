@@ -108,11 +108,11 @@ footer {
   color: #fff;
 }
 
-footer:h6 {
+footer h6 {
   color: #fa940b;
 }
 
-footer:h6 ul {
+footer h6 ul {
   color: #fff;
   text-decoration: none;
 }
