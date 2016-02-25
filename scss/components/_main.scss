@@ -108,6 +108,8 @@ footer {
     li {
       @include zero;
       color: $white;
+      list-style-type: none;
+      text-decoration: none;
     }
   }
 }
