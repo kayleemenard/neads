@@ -100,10 +100,14 @@ h1{
 
 footer {
   background-color: $black;
-  color: $white;
-  h6 {
+}
+
+.ft-header {  
+  p {
     color: $mustard-yellow;
-    ul {
+  }
+  ul {
+    li {
       color: $white;
       text-decoration: none;
     }

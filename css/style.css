@@ -105,14 +105,13 @@ h1 {
 
 footer {
   background-color: #000;
-  color: #fff;
 }
 
-footer h6 {
+.ft-header p {
   color: #fa940b;
 }
 
-footer h6 ul {
+.ft-header ul li {
   color: #fff;
   text-decoration: none;
 }
