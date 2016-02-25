@@ -119,6 +119,13 @@ footer {
 .ft-header ul li {
   color: #fff;
   float: left;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.icons ul li {
+  color: #fff;
+  list-style-type: none;
   text-decoration: none;
 }
 

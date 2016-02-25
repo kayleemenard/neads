@@ -112,6 +112,17 @@ footer {
     li {
       color: $white;
       float: left;
+      list-style-type: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.icons {
+  ul {
+    li {
+      color: $white;
+      list-style-type: none;
       text-decoration: none;
     }
   }
