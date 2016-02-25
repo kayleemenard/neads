@@ -108,11 +108,14 @@ footer {
     color: $mustard-yellow;
   }
   ul {
+    @include zero;
     display: inline-block;
+    float: left;
     li {
+      @include zero;
       color: $white;
-      float: left;
       list-style-type: none;
+      text-align: left;
       text-decoration: none;
     }
   }
