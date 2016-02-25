@@ -1,4 +1,3 @@
-permalink: pretty
 markdown: redcarpet
-baseurl: ""
+baseurl: /neads
 exclude: ['neads-template.md']
