@@ -101,7 +101,16 @@ h1{
 footer {
   background-color: $black;
   color: $white;
+} 
+
+footer:h6 {
+  color: $mustard-yellow;
+  ul {
+    color: $white;
+    text-decoration: none;
+  }
 }
+
 
 /**
  * Sliding Navigation
