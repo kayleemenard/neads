@@ -105,14 +105,20 @@ h1 {
 
 footer {
   background-color: #000;
+  padding: 1em;
 }
 
 .ft-header p {
   color: #fa940b;
 }
 
+.ft-header ul {
+  display: inline-block;
+}
+
 .ft-header ul li {
   color: #fff;
+  float: left;
   text-decoration: none;
 }
 

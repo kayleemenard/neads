@@ -100,6 +100,7 @@ h1{
 
 footer {
   background-color: $black;
+  padding: 1em;
 }
 
 .ft-header {  
@@ -107,8 +108,10 @@ footer {
     color: $mustard-yellow;
   }
   ul {
+    display: inline-block;
     li {
       color: $white;
+      float: left;
       text-decoration: none;
     }
   }
