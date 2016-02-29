@@ -24,10 +24,6 @@ body.noscript .navigation{
   right: auto;
 }    
 
-
-
-
-
 // HEADER /////////////////////////////////////////////////////////////////////////////
 header {
   padding: 0 1em;
@@ -44,13 +40,12 @@ header {
 }
 
 .toggle-btn{
-    position: absolute;
-    right: 1em;
-    top: 1em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
 }
 
 .navigation {
-    
   ul{
     padding:0; 
     li{
@@ -60,7 +55,6 @@ header {
       }
     }
   } // /ul
-
   a {
       padding: 0.5em 1em;
       display: block;
@@ -123,7 +117,7 @@ footer {
   }
 }
 
-.icons {
+.ft-icons {
   ul {
     li {
       color: $white;
