@@ -1,0 +1,3 @@
+prettylink: pretty
+baseurl: ""
+exclude: ['neads-template.md']
