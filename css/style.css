@@ -117,6 +117,10 @@ footer {
   cursor: pointer;
 }
 
+.ft-header a:hover {
+  font-weight: bold;
+}
+
 .ft-header ul {
   margin: 0;
   padding: 0;
@@ -132,6 +136,11 @@ footer {
   text-decoration: none;
 }
 
+.ft-header ul li a:hover {
+  color: #fa940b;
+  font-weight: bold;
+}
+
 .ft-icons {
   text-align: center;
 }
@@ -140,6 +149,11 @@ footer {
   text-decoration: none;
   cursor: pointer;
   color: #fff;
+}
+
+.ft-icons a:hover {
+  color: #fa940b;
+  font-weight: bold;
 }
 
 .ft-info {
