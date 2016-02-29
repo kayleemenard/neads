@@ -110,11 +110,11 @@ h1 {
 
 footer {
   background-color: #000;
-  padding: 1em;
 }
 
-.ft-header p {
+.ft-header a {
   color: #fa940b;
+  cursor: pointer;
 }
 
 .ft-header ul {
@@ -123,17 +123,28 @@ footer {
 }
 
 .ft-header ul li {
-  margin: 0;
-  padding: 0;
-  color: #fff;
   list-style-type: none;
+}
+
+.ft-header ul li a {
+  color: #fff;
+  cursor: pointer;
   text-decoration: none;
 }
 
-.ft-icons ul li {
-  color: #fff;
-  list-style-type: none;
+.ft-icons {
+  text-align: center;
+}
+
+.ft-icons a {
   text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.ft-info {
+  color: #fff;
+  text-align: center;
 }
 
 /**
@@ -170,6 +181,18 @@ footer {
   }
 }
 
+@media only screen and (min-width: 25em) {
+  .ft-header {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .ft-header {
+    text-align: left;
+  }
+}
+
 @media only screen and (min-width: 60em) {
   .toggle-btn,
   .close-btn {
@@ -186,7 +209,7 @@ footer {
     right: 1em;
     top: 1.5em;
   }
-  li {
+  .navigation ul li {
     display: inline-block;
   }
 }

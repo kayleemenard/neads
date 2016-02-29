@@ -99,34 +99,44 @@ h1{
 
 footer {
   background-color: $black;
-  padding: 1em;
 }
 
-.ft-header {  
-  p {
+.ft-header { 
+  a {
     color: $mustard-yellow;
+    cursor: pointer;
   }
   ul {
     @include zero;
     li {
-      @include zero;
-      color: $white;
+
       list-style-type: none;
-      text-decoration: none;
+      a {
+        color: $white;
+        cursor: pointer;
+        text-decoration: none;
+      }
     }
   }
-}
+}// /.ft-header
 
 .ft-icons {
-  ul {
-    li {
-      color: $white;
-      list-style-type: none;
-      text-decoration: none;
-    }
+  text-align: center;
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $white;
   }
+} // /.ft-icons
+
+.ft-info {
+  color: $white;
+  text-align: center;
 }
 
+
+
+// MEDIA QUERIES /////////////////////////////////////////////////////////////////////////////
 
 /**
  * Sliding Navigation
@@ -170,6 +180,18 @@ footer {
   } // /.navigation
 } // /media query
 
+@media only screen and (min-width: 25em) {
+  .ft-header {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .ft-header {
+    text-align: left;
+  }
+}
+
 // Resets page when desktop, even if nav is toggled open
 @media only screen and (min-width: 60em) {
   .toggle-btn,
@@ -182,8 +204,8 @@ footer {
     position: absolute;
     right: 1em;
     top: 1.5em;
+    li {
+      display: inline-block;
     }
-  li {
-    display: inline-block;
   }
 } // /media query
