@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    
-    <url><loc>https://kayleemenard.github.io</loc>
-    </url>
-    
-        <url><loc>https://kayleemenard.github.io/nead/home.html</loc>
-    </url>
-    
-            <url><loc>https://kayleemenard.github.io/neads/about.html</loc>
-    </url>
-    
-            <url><loc>https://kayleemenard.github.io/neads/services.html</loc>
-    </url>
-            
-                <url><loc>https://kayleemenard.github.io/neads/give.html</loc>
-    </url>
-    
-                <url><loc>https://kayleemenard.github.io/neads/resource.html</loc>
-    </url>
-    
+    <url><loc>https://kayleemenard.github.io</loc></url>
+    <url><loc>https://kayleemenard.github.io/nead/home.html</loc></url>
+    <url><loc>https://kayleemenard.github.io/neads/about.html</loc></url>
+    <url><loc>https://kayleemenard.github.io/neads/services.html</loc></url>
+    <url><loc>https://kayleemenard.github.io/neads/give.html</loc></url>
+    <url><loc>https://kayleemenard.github.io/neads/resource.html</loc></url>
 </urlset>
