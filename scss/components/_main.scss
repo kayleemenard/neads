@@ -1,4 +1,4 @@
-@viewport { width: device-width; scale: 1; }
+
 
 html {
 	box-sizing: border-box;
@@ -24,11 +24,7 @@ body.noscript .navigation{
   right: auto;
 }    
 
-
-
-
-
-// HEADER /////////////////////////////////////////////////////////////////////////////
+// HEADER //
 header {
   padding: 0 1em;
   height: 7em;
@@ -44,13 +40,12 @@ header {
 }
 
 .toggle-btn{
-    position: absolute;
-    right: 1em;
-    top: 1em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
 }
 
 .navigation {
-    
   ul{
     padding:0; 
     li{
@@ -60,7 +55,6 @@ header {
       }
     }
   } // /ul
-
   a {
       padding: 0.5em 1em;
       display: block;
@@ -88,6 +82,12 @@ header {
   }
 }
 
+nav .current,
+nav .current:link,
+nav .current:visited{ 
+    background-color: $mustard-yellow;
+}
+
 .close-btn{
   margin: 1em;
 }
@@ -101,38 +101,58 @@ h1{
     font-size: 1.5em;
 }
 
-// FOOTER /////////////////////////////////////////////////////////////////////////////
+// FOOTER //
 
 footer {
   background-color: $black;
-  padding: 1em;
 }
 
-.ft-header {  
-  p {
+.ft-header { 
+  a {
     color: $mustard-yellow;
+    cursor: pointer;
+    &:hover {
+      font-weight: bold;
+    }
   }
   ul {
     @include zero;
     li {
-      @include zero;
-      color: $white;
       list-style-type: none;
-      text-decoration: none;
+      a {
+        color: $white;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+          color: $mustard-yellow;
+          font-weight: bold;
+        }
+      }
     }
   }
-}
+}// /.ft-header
 
-.icons {
-  ul {
-    li {
-      color: $white;
-      list-style-type: none;
-      text-decoration: none;
+.ft-icons {
+  text-align: center;
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $white;
+    &:hover {
+      color: $mustard-yellow;
+      font-weight: bold;
     }
   }
+} // /.ft-icons
+
+.ft-info {
+  color: $white;
+  text-align: center;
 }
 
+
+
+// MEDIA QUERIES //
 
 /**
  * Sliding Navigation
@@ -176,6 +196,18 @@ footer {
   } // /.navigation
 } // /media query
 
+@media only screen and (min-width: 25em) {
+  .ft-header {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .ft-header {
+    text-align: left;
+  }
+}
+
 // Resets page when desktop, even if nav is toggled open
 @media only screen and (min-width: 60em) {
   .toggle-btn,
@@ -188,8 +220,8 @@ footer {
     position: absolute;
     right: 1em;
     top: 1.5em;
+    li {
+      display: inline-block;
     }
-  li {
-    display: inline-block;
   }
 } // /media query
