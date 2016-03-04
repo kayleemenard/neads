@@ -134,35 +134,7 @@ footer {
 .ft-header ul li a {
   color: #fff;
   cursor: pointer;
-<<<<<<< HEAD
   text-decoration: none;
-}
-
-.ft-header ul li a:hover {
-  color: #fa940b;
-  font-weight: bold;
-}
-
-.ft-icons {
-  text-align: center;
-}
-
-.ft-icons a {
-=======
->>>>>>> origin/gh-pages
-  text-decoration: none;
-  cursor: pointer;
-  color: #fff;
-}
-
-.ft-icons a:hover {
-  color: #fa940b;
-  font-weight: bold;
-}
-
-.ft-info {
-  color: #fff;
-  text-align: center;
 }
 
 .ft-header ul li a:hover {
@@ -190,9 +162,6 @@ footer {
   text-align: center;
 }
 
-/**
- * Sliding Navigation
- */
 @media only screen and (max-width: 60em) {
   .site-wrapper {
     position: relative;
