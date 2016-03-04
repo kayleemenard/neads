@@ -24,7 +24,6 @@ body.noscript .navigation{
   right: auto;
 }    
 
-// HEADER //
 header {
   padding: 0 1em;
   height: 7em;
@@ -151,15 +150,6 @@ footer {
 }
 
 
-
-// MEDIA QUERIES //
-
-/**
- * Sliding Navigation
- */
-
-// Page should move when nav opens
-// only time we will ever use max-width
 @media only screen and (max-width: 60em){
   .site-wrapper{
     position: relative;
