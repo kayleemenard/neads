@@ -24,6 +24,10 @@ body.noscript .navigation{
   right: auto;
 }    
 
+<<<<<<< HEAD
+=======
+// HEADER /////////////////////////////////////////////////////////////////////////////
+>>>>>>> origin/gh-pages
 header {
   padding: 0 1em;
   height: 7em;
@@ -143,12 +147,29 @@ footer {
     }
   }
 } // /.ft-icons
+<<<<<<< HEAD
+=======
+
+.ft-info {
+  color: $white;
+  text-align: center;
+}
+>>>>>>> origin/gh-pages
 
 .ft-info {
   color: $white;
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+
+// MEDIA QUERIES /////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Sliding Navigation
+ */
+>>>>>>> origin/gh-pages
 
 @media only screen and (max-width: 60em){
   .site-wrapper{
