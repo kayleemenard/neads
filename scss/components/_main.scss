@@ -145,6 +145,29 @@ footer {
 }
 
 
+// apply for dog /////////////////////////////////////////////////////////////////////////////
+
+.app-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+  height: 4rem;
+  max-width: 10rem;
+  border: none;
+  border-radius: .5rem;
+  padding: 1em;
+  background-color: $black;
+  &:hover {
+    color: $mustard-yellow;
+    font-weight: bold;
+  }
+}
+
+
+// services /////////////////////////////////////////////////////////////////////////////
+
+
 
 // MEDIA QUERIES /////////////////////////////////////////////////////////////////////////////
 
