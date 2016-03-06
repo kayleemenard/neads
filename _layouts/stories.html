@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+    <meta charset="utf-8">
+    <title>{%if page.title%}{{page.title}} · {%endif%} NEADS {% if page.titleAfter %} · {{page.titleAfter}} {% endif %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="{{page.meta}}">
+
+    <link href="https://file.myfontastic.com/GJr888HWLVE4beAYbY2y9k/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://file.myfontastic.com/MGBNLMU3WjcpkEBDsk5FqN/icons.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">    
+    <link href="favicon.ico" rel="shortcut icon">
+</head>
+
+<body class="noscript">
+  <div class="site-wrapper" data-state="slide-closed">
+    <div class="sliding-canvas">
+
+    {% include navtop.html %}
+
+    <main>
+    {{content}}
+    </main>
+    
+    {% include footer.html %}
+
+    </div>
+  </div>
+
+ <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
