@@ -1,0 +1,9 @@
+---
+layout: stories
+title: Jennifer and Service Dog Justice
+meta: Justice brings smiles to Jennifer's face and strangers faces too!
+image: images/dog-scooter.jpg
+category: success
+---
+
+"The biggest thing that I think she does for me is, I never used to go out by myself, because I felt kind of weird. People would look at me and then would look away. I think they're uncomfortable looking at someone in a scooter, or they don't want to stare, or they think _that could be me_. Instead of people looking away, everywhere I go with Justice, everyone smiles at me, and people come and talk to me and it's really nice to have that connection with people."

@@ -1,0 +1,9 @@
+---
+layout: stories
+title: Emily and Rev, the Service Dog for Therapy
+meta: Rev brings joy to Emily's patients everyday.
+image: images/dog-kissing-lady.jpg
+category: success
+---
+
+"I just wanted to thank everyone at NEADS for matching me with Rev. I work in a nursing home as an occupational therapist, and he comes to work with me every day, and he brightens the patients and staff in our entire building and participants in therapy, and makes everybody extremely happy every day."
