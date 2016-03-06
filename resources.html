@@ -9,9 +9,9 @@ meta: Neads, National Education for Assistance Dog Services
 <h2>Success Stories</h2>
 
 <ul>
-	{% for success in site.posts %}
+	{% for success in site.categories.success %}
 	<li>
-		<a href="">
+		<a href="#">
 			{{success.title}}
 			<img src="{{success.image}}">
 			<p>{{success.meta}}</p>
@@ -20,14 +20,15 @@ meta: Neads, National Education for Assistance Dog Services
 	{% endfor %}
 </ul>
 
+<h2>Upcoming Events</h2>
+
 <ul>
 	{% for events in site.categories.events %}
 	<li>
-		<a href="">
+		<a href="#">
 			{{events.title}}
 			<p>{{events.meta}}</p>
 		</a>
 	</li>
 	{% endfor %}
-
 </ul>
