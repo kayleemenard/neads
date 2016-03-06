@@ -5,3 +5,17 @@ meta: Neads, National Education for Assistance Dog Services
 ---
 
 <h1>Resources</h1>
+
+<h2>Success Stories</h2>
+
+<ul>
+	{% for success in site.posts %}
+	<li>
+		<a href="">
+			{{success.title}}
+			<img src="{{success.image}}">
+			<p>{{success.meta}}</p>
+		</a>
+	</li>
+	{% endfor %}
+</ul>
