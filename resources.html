@@ -19,3 +19,15 @@ meta: Neads, National Education for Assistance Dog Services
 	</li>
 	{% endfor %}
 </ul>
+
+<ul>
+	{% for events in site.categories.events %}
+	<li>
+		<a href="">
+			{{events.title}}
+			<p>{{events.meta}}</p>
+		</a>
+	</li>
+	{% endfor %}
+
+</ul>
