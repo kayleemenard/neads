@@ -2,6 +2,7 @@
 layout: stories
 title: NEADS Spring Graduation 2016
 meta: Sunday, April 10, 2016 from 2:00pm to 4:00pm
+image: images/child-with-dog.jpg
 category: events
 ---
 

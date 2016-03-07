@@ -162,6 +162,74 @@ footer {
   text-align: center;
 }
 
+.resources-banner {
+  background-image: url("/images/child-with-dog.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+.resources-banner div {
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.25);
+  max-height: 100%;
+  color: #fff;
+}
+
+.resources-banner div h2 {
+  text-align: center;
+}
+
+.resources-banner div a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.blog {
+  list-style-type: none;
+}
+
+.blog:hover {
+  cursor: pointer;
+}
+
+.blog h4 {
+  color: #fa940b;
+}
+
+.blog-post {
+  color: #222;
+  text-decoration: none;
+}
+
+.blog-post img {
+  display: block;
+  max-width: 100%;
+}
+
+.blog-post .prompt {
+  color: #fa940b;
+}
+
+.event-post {
+  padding-left: 0;
+  padding-right: 1em;
+}
+
+.event-post a {
+  color: #0c7a7a;
+  text-decoration: none;
+}
+
+.event-post a p {
+  color: #222;
+}
+
+.event-post img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 60em) {
   .site-wrapper {
     position: relative;
