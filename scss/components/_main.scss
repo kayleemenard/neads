@@ -155,15 +155,12 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 
-  min-height: 50vh;
   margin-bottom: 4em;
 } 
 
 .resources-banner-text {
   background-color: rgba(0,0,0,0.25);
   color: $white;
-  vertical-align: middle;
-
   h2 {
     text-align: center;
     text-weight: none;
@@ -176,6 +173,11 @@ footer {
       text-decoration: none;
       border: 2px solid #fff;
       width: 100%;
+      &:hover {
+        border: 3px solid $mustard-yellow;
+        color: $mustard-yellow;
+        font-weight: bold;
+      }
     }
   }
 }

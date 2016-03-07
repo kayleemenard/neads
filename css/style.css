@@ -167,14 +167,12 @@ footer {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 50vh;
   margin-bottom: 4em;
 }
 
 .resources-banner-text {
   background-color: rgba(0, 0, 0, 0.25);
   color: #fff;
-  vertical-align: middle;
 }
 
 .resources-banner-text h2 {
@@ -192,6 +190,12 @@ footer {
   text-decoration: none;
   border: 2px solid #fff;
   width: 100%;
+}
+
+.resources-banner-text div a:hover {
+  border: 3px solid #fa940b;
+  color: #fa940b;
+  font-weight: bold;
 }
 
 .blog {
