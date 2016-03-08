@@ -1,7 +1,7 @@
 <header>
    
   <div>
-      <img class="logo" src="images/logo.svg" href="index.html" alt="NEADS logo">
+      <img class="logo" src="images/logo.svg" href="{{site.baseurl}}/" alt="NEADS logo">
   </div>
       
          <!-- Menu Toggle Icon -->
@@ -18,9 +18,10 @@
         <li><a href="{{site.baseurl}}/resource/" class="{% if page.url == '/resource/' %}current{% endif %}" >RESOURCE</a></li>
         <li><a href="{{site.baseurl}}/give/" class="{% if page.url == '/give/' %}current{% endif %}" >GIVE</a></li>
         <li><a href="{{site.baseurl}}/login/" class="{% if page.url == '/login/' %}current{% endif %}">LOGIN</a></li>
-        <li><a href="{{site.baseurl}}/donate/" class="donate {% if page.url == '/donate/' %}current{% endif %}" >DONATE</a></li>
-
+        <li><a href="{{site.baseurl}}/give/" class="btn tera {% if page.url == '/give/' %}current{% endif %}">DONATE</a></li>
     </ul>
+      
   </nav>
+    
     
 </header>
