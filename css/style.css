@@ -165,6 +165,15 @@ text-center {
   text-align: center;
 }
 
+.img {
+  display: block;
+  width: 100%;
+}
+
+.darkgrey {
+  color: #ccc;
+}
+
 footer {
   background-color: #000;
 }

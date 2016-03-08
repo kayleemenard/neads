@@ -152,14 +152,24 @@ nav .current:visited{
     color: $black;
 }
 
+
 // HOME //
 
 text-center {
     text-align: center;
 }
 
+.img {
+    display: block;
+    width: 100%;
+}
 
-// FOOTER //
+.darkgrey{
+    color: $light-grey;
+}
+
+
+//FOOTER//
 
 footer {
   background-color: $black;
@@ -209,6 +219,81 @@ footer {
   text-align: center;
 }
 
+// RESOURCES //////////////////////////////////////////
+.resources-banner {
+  background-image: url("/images/child-with-dog.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin-bottom: 4em;
+} 
+
+.resources-banner-text {
+  background-color: rgba(0,0,0,0.25);
+  color: $white;
+  h2 {
+    text-align: center;
+    text-weight: none;
+  }
+  div {
+    min-width: 100%;
+    text-align: center;
+    a {
+      color: white;
+      text-decoration: none;
+      border: 2px solid #fff;
+      width: 100%;
+      &:hover {
+        border: 3px solid $mustard-yellow;
+        color: $mustard-yellow;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.blog {
+  list-style-type: none;  
+  &:hover {
+    cursor: pointer;
+  }
+  h4 {
+    color: $mustard-yellow;
+  }
+} // /.blog
+
+.blog-post {
+  color: $dark-grey;
+  text-decoration: none;
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  .prompt {
+    color: $mustard-yellow;
+  }
+}
+
+.event-post {
+  padding-left: 0;
+  padding-right: 1em;
+  a {
+    color: $greenish-blue;
+    text-decoration: none;
+    p {
+      color: $dark-grey;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+
+
+
+// Media Queries //////////////////////////////////////
 
 @media only screen and (max-width: 60em){
   .site-wrapper{
