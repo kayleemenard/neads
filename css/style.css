@@ -51,6 +51,10 @@ header {
   list-style-type: none;
 }
 
+.navigation ul li:last-child {
+  color: #fff;
+}
+
 .navigation ul li:hover {
   background-color: #fa940b;
 }
@@ -92,21 +96,73 @@ header {
 nav .current,
 nav .current:link,
 nav .current:visited {
-  background-color: #fa940b;
+  text-decoration: underline;
 }
 
 .close-btn {
   margin: 1em;
 }
 
-.image {
+.banner {
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  text-align: center;
 }
 
-h1 {
+.banner-img {
+  padding-top: 40.56%;
+  background-image: url(../images/dog-learning.jpg);
+  background-size: cover;
+}
+
+.donate {
+  height: auto;
+  width: 9em;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.donate:hover {
+  cursor: pointer;
+  background-color: #fff;
+  text-decoration-color: #000;
+}
+
+.button {
+  padding: 12px 15px 12px 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  background-color: #fa940b;
+  color: #fff;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #c10000;
+  color: #000;
+}
+
+.btn {
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  color: #000;
+  background-color: #fa940b;
+  color: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #c10000;
+  color: #000;
+}
+
+text-center {
   text-align: center;
-  font-size: 1.5em;
 }
 
 footer {
@@ -199,9 +255,22 @@ footer {
   }
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 45em) {
   .ft-header {
     text-align: left;
+  }
+  .intro-wrap {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 4em;
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+  .intro {
+    font-size: 40px;
+  }
+  .sub-head {
+    font-size: 25px;
   }
 }
 
@@ -223,6 +292,23 @@ footer {
   }
   .navigation ul li {
     display: inline-block;
+  }
+  .intro-wrap {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 7em;
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+  .intro {
+    font-size: 55px;
+    text-align: center;
+    color: #000;
+  }
+  .sub-head {
+    font-size: 28px;
+    text-align: center;
+    color: #000;
   }
 }
 
