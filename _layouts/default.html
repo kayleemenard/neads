@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-<head>
+<head role="banner">
     <meta charset="utf-8">
     <title>{%if page.title%}{{page.title}} · {%endif%} NEADS {% if page.titleAfter %} · {{page.titleAfter}} {% endif %}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,13 +14,19 @@
     <link href="favicon.ico" rel="shortcut icon">
 </head>
 
+<ul class="skip-links">
+    <li><a href="#nav">Skip to navigation</a></li>
+    <li><a href="#main">Skip to main content</a></li>
+    <li><a href="#footer">Skip to footer</a></li>
+</ul>
+
 <body class="noscript">
   <div class="site-wrapper" data-state="slide-closed">
     <div class="sliding-canvas">
 
     {% include navtop.html %}
 
-    <main>
+    <main role="main" id="main">
     {{content}}
     </main>
     
