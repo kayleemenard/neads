@@ -227,6 +227,86 @@ footer {
   text-align: center;
 }
 
+.resources-banner {
+  background-image: url("/images/child-with-dog.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4em;
+}
+
+.resources-banner-text {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+.resources-banner-text h2 {
+  text-align: center;
+  text-weight: none;
+}
+
+.resources-banner-text div {
+  min-width: 100%;
+  text-align: center;
+}
+
+.resources-banner-text div a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid #fff;
+  width: 100%;
+}
+
+.resources-banner-text div a:hover {
+  border: 3px solid #fa940b;
+  color: #fa940b;
+  font-weight: bold;
+}
+
+.blog {
+  list-style-type: none;
+}
+
+.blog:hover {
+  cursor: pointer;
+}
+
+.blog h4 {
+  color: #fa940b;
+}
+
+.blog-post {
+  color: #222;
+  text-decoration: none;
+}
+
+.blog-post img {
+  display: block;
+  max-width: 100%;
+}
+
+.blog-post .prompt {
+  color: #fa940b;
+}
+
+.event-post {
+  padding-left: 0;
+  padding-right: 1em;
+}
+
+.event-post a {
+  color: #0c7a7a;
+  text-decoration: none;
+}
+
+.event-post a p {
+  color: #222;
+}
+
+.event-post img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 60em) {
   .site-wrapper {
     position: relative;
