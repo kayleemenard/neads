@@ -211,6 +211,39 @@ text-center {
     background-color:$red;
     color: $black;
 }
+
+//DONATION//
+.donation {
+  min-height: 50em;
+  padding-top: 15em;
+  background-image: url(../images/elderlylady-and-dog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.donation-content {
+  background-color: rgba(192, 192, 192, 0.3);
+}
+
+.donation-h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1em;
+  font-size: 20em;
+}
+
+.donate-p {
+  text-align: center;
+  margin-top: -2em;
+}
+
+.donate-shop {
+  text-transform: uppercase;
+  color: $mustard-yellow;
+  text-decoration: none;
+}
+
 //FOOTER//
 footer {
   background-color: $black;
@@ -281,13 +314,11 @@ footer {
 .resources-banner-text {
   background-color: rgba(0,0,0,0.25);
   color: $white;
-<<<<<<< Updated upstream
-=======
   text-align: center;
   h1 {
     text-align: center;
   }
->>>>>>> Stashed changes
+
   h2 {
     text-align: center;
     text-weight: none;
@@ -416,6 +447,10 @@ footer {
 }
 }
 
+.donation-h2 {
+  font-size: 50px;
+}
+
 // Resets page when desktop, even if nav is toggled open//
 @media only screen and (min-width: 60em) {
   .toggle-btn,
@@ -450,6 +485,14 @@ footer {
     font-size: 28px;
     text-align: center;
     color: $black;
+}
+
+.donation-h2 {
+  font-size: 90px;
+}
+
+.donate-p {
+  font-size: 30px;
 }
     
 } //media query//

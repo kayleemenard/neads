@@ -218,6 +218,37 @@ text-center {
   color: #000;
 }
 
+.donation {
+  min-height: 50em;
+  padding-top: 15em;
+  background-image: url(../images/elderlylady-and-dog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.donation-content {
+  background-color: rgba(192, 192, 192, 0.3);
+}
+
+.donation-h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1em;
+  font-size: 20em;
+}
+
+.donate-p {
+  text-align: center;
+  margin-top: -2em;
+}
+
+.donate-shop {
+  text-transform: uppercase;
+  color: #fa940b;
+  text-decoration: none;
+}
+
 footer {
   background-color: #000;
 }
@@ -290,6 +321,11 @@ footer {
 .resources-banner-text {
   background-color: rgba(0, 0, 0, 0.25);
   color: #ffffff;
+  text-align: center;
+}
+
+.resources-banner-text h1 {
+  text-align: center;
 }
 
 .resources-banner-text h2 {
@@ -415,6 +451,10 @@ footer {
   }
 }
 
+.donation-h2 {
+  font-size: 50px;
+}
+
 @media only screen and (min-width: 60em) {
   .toggle-btn,
   .close-btn {
@@ -450,6 +490,12 @@ footer {
     font-size: 28px;
     text-align: center;
     color: #000;
+  }
+  .donation-h2 {
+    font-size: 90px;
+  }
+  .donate-p {
+    font-size: 30px;
   }
 }
 
