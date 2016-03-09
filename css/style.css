@@ -220,6 +220,8 @@ text-center {
 
 .donation-h2 {
   text-align: center;
+  text-transform: uppercase;
+  margin: 1em;
 }
 
 footer {
