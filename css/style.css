@@ -219,8 +219,16 @@ text-center {
 }
 
 .donation {
-  height: 50vh;
-  margin-top: 15em;
+  min-height: 50em;
+  padding-top: 15em;
+  background-image: url(../images/elderlylady-and-dog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.donation-content {
+  background-color: rgba(192, 192, 192, 0.3);
 }
 
 .donation-h2 {
@@ -485,6 +493,9 @@ footer {
   }
   .donation-h2 {
     font-size: 90px;
+  }
+  .donate-p {
+    font-size: 30px;
   }
 }
 
