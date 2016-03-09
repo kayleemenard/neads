@@ -172,6 +172,21 @@ text-center {
     list-style-type: none;
     }
 }
+
+.btn-map{
+    padding: 5px 5px 5px 5px;
+    text-decoration: none; 
+    display:inline-block;
+    font-weight:bold; color: $black;
+    background-color: $mustard-yellow; 
+    color: $black;
+}
+
+.btn-map:hover{
+    cursor: pointer;
+    background-color:$red;
+    color: $black;
+}
 //FOOTER//
 footer {
   background-color: $black;

@@ -178,6 +178,22 @@ text-center {
   list-style-type: none;
 }
 
+.btn-map {
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  color: #000;
+  background-color: #fa940b;
+  color: #000;
+}
+
+.btn-map:hover {
+  cursor: pointer;
+  background-color: #c10000;
+  color: #000;
+}
+
 footer {
   background-color: #000;
 }
