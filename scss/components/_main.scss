@@ -209,6 +209,12 @@ text-center {
     background-color:$red;
     color: $black;
 }
+
+//DONATION//
+.donation-h2 {
+  text-align: center;
+}
+
 //FOOTER//
 footer {
   background-color: $black;
@@ -279,13 +285,11 @@ footer {
 .resources-banner-text {
   background-color: rgba(0,0,0,0.25);
   color: $white;
-<<<<<<< Updated upstream
-=======
   text-align: center;
   h1 {
     text-align: center;
   }
->>>>>>> Stashed changes
+
   h2 {
     text-align: center;
     text-weight: none;

@@ -218,6 +218,10 @@ text-center {
   color: #000;
 }
 
+.donation-h2 {
+  text-align: center;
+}
+
 footer {
   background-color: #000;
 }
@@ -290,6 +294,11 @@ footer {
 .resources-banner-text {
   background-color: rgba(0, 0, 0, 0.25);
   color: #ffffff;
+  text-align: center;
+}
+
+.resources-banner-text h1 {
+  text-align: center;
 }
 
 .resources-banner-text h2 {
