@@ -55,15 +55,15 @@ header {
     
       }
     }
-  } // /ul
+  } 
   a {
       padding: 0.5em 1em;
       display: block;
       text-align: center;
       text-decoration: none;
       color: $text-color;
-  }// /a
-} // /nav
+  }
+} 
 
 .toggle-btn,
 .close-btn{
@@ -152,7 +152,6 @@ nav .current:visited{
     color: $black;
 }
 
-
 // HOME //
 
 text-center {
@@ -160,17 +159,16 @@ text-center {
 }
 
 .img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
-.darkgrey{
-    color: $light-grey;
+.darkgrey {
+  color: #ccc;
 }
 
 
 //FOOTER//
-
 footer {
   background-color: $black;
 }
@@ -198,7 +196,7 @@ footer {
       }
     }
   }
-}// /.ft-header
+}// ft-header//
 
 .ft-icons {
   text-align: center;
@@ -211,7 +209,7 @@ footer {
       font-weight: bold;
     }
   }
-} // /.ft-icons
+} //ft-icons//
 
 
 .ft-info {
@@ -219,7 +217,7 @@ footer {
   text-align: center;
 }
 
-// RESOURCES //////////////////////////////////////////
+// RESOURCES /
 .resources-banner {
   background-image: url("/images/child-with-dog.jpg");
   background-position: top center;
@@ -261,7 +259,7 @@ footer {
   h4 {
     color: $mustard-yellow;
   }
-} // /.blog
+} //blog//
 
 .blog-post {
   color: $dark-grey;
@@ -293,7 +291,7 @@ footer {
 
 
 
-// Media Queries //////////////////////////////////////
+// Media Queries //
 
 @media only screen and (max-width: 60em){
   .site-wrapper{
@@ -316,11 +314,11 @@ footer {
     &[data-state='slide-open']{
       overflow:visible;
     }
-  } // /.site-wrapper
+  } //site-wrapper//
 
   // Nav styles
   .navigation{
-    //creates sliding effect
+    //creates sliding effect//
     position: absolute;
     width: 100%;
     right: -100%;
@@ -328,8 +326,8 @@ footer {
     bottom: 0;
     padding: 0;
     min-height: 800px;
-  } // /.navigation
-} // /media query
+  } //navigation//
+} //media query//
 
 @media only screen and (min-width: 25em) {
   .ft-header {
@@ -360,7 +358,7 @@ footer {
 }
 }
 
-// Resets page when desktop, even if nav is toggled open
+// Resets page when desktop, even if nav is toggled open//
 @media only screen and (min-width: 60em) {
   .toggle-btn,
   .close-btn{
@@ -396,4 +394,4 @@ footer {
     color: $black;
 }
     
-} // /media query
+} //media query//
