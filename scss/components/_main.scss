@@ -47,19 +47,23 @@ header {
     padding:0; 
     li{
       list-style-type: none;
+           &:last-child{
+              color: $white;
+          }
       &:hover{
         background-color: $mustard-yellow; 
+    
       }
     }
-  } // /ul
+  } 
   a {
       padding: 0.5em 1em;
       display: block;
       text-align: center;
       text-decoration: none;
       color: $text-color;
-  }// /a
-} // /nav
+  }
+} 
 
 .toggle-btn,
 .close-btn{
@@ -82,24 +86,112 @@ header {
 nav .current,
 nav .current:link,
 nav .current:visited{ 
-    background-color: $mustard-yellow;
+    text-decoration: underline;
+
 }
 
 .close-btn{
   margin: 1em;
 }
 
-.image{
+.banner{
     @include img;
-}
-
-h1{
+    position: relative;
     text-align: center;
-    font-size: 1.5em;
 }
 
-// FOOTER ////////////////////////////////////////////
 
+.banner-img {
+    padding-top: 40.56%;
+    background-image: url(../images/dog-learning.jpg);
+    background-size: cover;
+}
+
+.donate{
+    height: auto;
+    width: 9em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.donate:hover{
+    cursor: pointer;
+    background-color: $white;
+    text-decoration-color: $black;
+}
+
+
+.button {
+    padding: 12px 15px 12px 15px;
+    text-decoration: none; 
+    display:inline-block;
+    font-weight:bold;
+    background-color: $mustard-yellow; 
+    color: $white;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color:$red;
+    color: $black;
+}
+
+.btn {
+    padding: 5px 5px 5px 5px;
+    text-decoration: none; 
+    display:inline-block;
+    font-weight:bold; color: $black;
+    background-color: $mustard-yellow; 
+    color: $white;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color:$red;
+    color: $black;
+}
+
+// HOME //
+
+text-center {
+    text-align: center;
+}
+
+<<<<<<< HEAD
+// FOOTER ////////////////////////////////////////////
+=======
+.img {
+  display: block;
+  width: 100%;
+}
+
+.darkgrey {
+  color: #ccc;
+}
+
+.contact{
+    li{
+    list-style-type: none;
+    }
+}
+>>>>>>> gh-pages
+
+.btn-map{
+    padding: 5px 5px 5px 5px;
+    text-decoration: none; 
+    display:inline-block;
+    font-weight:bold; color: $black;
+    background-color: $mustard-yellow; 
+    color: $black;
+}
+
+.btn-map:hover{
+    cursor: pointer;
+    background-color:$red;
+    color: $black;
+}
+//FOOTER//
 footer {
   background-color: $black;
 }
@@ -127,7 +219,7 @@ footer {
       }
     }
   }
-}// /.ft-header
+}// ft-header//
 
 .ft-icons {
   text-align: center;
@@ -140,7 +232,7 @@ footer {
       font-weight: bold;
     }
   }
-} // /.ft-icons
+} //ft-icons//
 
 
 .ft-info {
@@ -148,7 +240,11 @@ footer {
   text-align: center;
 }
 
+<<<<<<< HEAD
 // RESOURCES //////////////////////////////////////////
+=======
+// RESOURCES /
+>>>>>>> gh-pages
 .resources-banner {
   background-image: url("/images/child-with-dog.jpg");
   background-position: top center;
@@ -161,6 +257,16 @@ footer {
 .resources-banner-text {
   background-color: rgba(0,0,0,0.25);
   color: $white;
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+  text-align: center;
+  h1 {
+    text-align: center;
+  }
+>>>>>>> Stashed changes
+>>>>>>> gh-pages
   h2 {
     text-align: center;
     text-weight: none;
@@ -190,7 +296,11 @@ footer {
   h4 {
     color: $mustard-yellow;
   }
+<<<<<<< HEAD
 } // /.blog
+=======
+} //blog//
+>>>>>>> gh-pages
 
 .blog-post {
   color: $dark-grey;
@@ -222,7 +332,11 @@ footer {
 
 
 
+<<<<<<< HEAD
 // Media Queries //////////////////////////////////////
+=======
+// Media Queries //
+>>>>>>> gh-pages
 
 @media only screen and (max-width: 60em){
   .site-wrapper{
@@ -245,11 +359,11 @@ footer {
     &[data-state='slide-open']{
       overflow:visible;
     }
-  } // /.site-wrapper
+  } //site-wrapper//
 
   // Nav styles
   .navigation{
-    //creates sliding effect
+    //creates sliding effect//
     position: absolute;
     width: 100%;
     right: -100%;
@@ -257,8 +371,8 @@ footer {
     bottom: 0;
     padding: 0;
     min-height: 800px;
-  } // /.navigation
-} // /media query
+  } //navigation//
+} //media query//
 
 @media only screen and (min-width: 25em) {
   .ft-header {
@@ -266,13 +380,30 @@ footer {
   }
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 45em) {
   .ft-header {
     text-align: left;
   }
+    
+   .intro-wrap {
+        bottom: 0;
+        position:  absolute;
+        margin-bottom: 4em;
+        margin-left: 8em;
+        margin-right: 8em;
+    }
+    
+    .intro{
+    font-size: 40px;
+   
 }
 
-// Resets page when desktop, even if nav is toggled open
+.sub-head{
+    font-size: 25px;
+}
+}
+
+// Resets page when desktop, even if nav is toggled open//
 @media only screen and (min-width: 60em) {
   .toggle-btn,
   .close-btn{
@@ -288,4 +419,24 @@ footer {
       display: inline-block;
     }
   }
-} // /media query
+    .intro-wrap {
+        bottom: 0;
+        position:  absolute;
+        margin-bottom: 7em;
+        margin-left: 8em; 
+        margin-right: 8em;
+    }
+    
+    .intro{
+    font-size: 55px;
+    text-align: center;
+    color: $black;
+}
+
+.sub-head{
+    font-size: 28px;
+    text-align: center;
+    color: $black;
+}
+    
+} //media query//
