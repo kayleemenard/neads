@@ -219,7 +219,7 @@ footer {
 
 // RESOURCES /
 .resources-banner {
-  background-image: url("/images/child-with-dog.jpg");
+  background-image: url("../images/child-with-dog.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -230,6 +230,9 @@ footer {
 .resources-banner-text {
   background-color: rgba(0,0,0,0.25);
   color: $white;
+  h1 {
+    text-align: center;
+  }
   h2 {
     text-align: center;
     text-weight: none;
