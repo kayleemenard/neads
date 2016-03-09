@@ -162,6 +162,86 @@ footer {
   text-align: center;
 }
 
+.resources-banner {
+  background-image: url("/images/child-with-dog.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4em;
+}
+
+.resources-banner-text {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+.resources-banner-text h2 {
+  text-align: center;
+  text-weight: none;
+}
+
+.resources-banner-text div {
+  min-width: 100%;
+  text-align: center;
+}
+
+.resources-banner-text div a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid #fff;
+  width: 100%;
+}
+
+.resources-banner-text div a:hover {
+  border: 3px solid #fa940b;
+  color: #fa940b;
+  font-weight: bold;
+}
+
+.blog {
+  list-style-type: none;
+}
+
+.blog:hover {
+  cursor: pointer;
+}
+
+.blog h4 {
+  color: #fa940b;
+}
+
+.blog-post {
+  color: #222;
+  text-decoration: none;
+}
+
+.blog-post img {
+  display: block;
+  max-width: 100%;
+}
+
+.blog-post .prompt {
+  color: #fa940b;
+}
+
+.event-post {
+  padding-left: 0;
+  padding-right: 1em;
+}
+
+.event-post a {
+  color: #0c7a7a;
+  text-decoration: none;
+}
+
+.event-post a p {
+  color: #222;
+}
+
+.event-post img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 60em) {
   .site-wrapper {
     position: relative;
@@ -761,6 +841,7 @@ sub {
   max-width: 600px;
   margin: 40px auto;
   border-radius: 4px;
+  color: white;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
@@ -800,11 +881,7 @@ sub {
   color: #ffffff;
 }
 
-.tab-content > div:last-child {
-  display: none;
-}
-
-label {
+.tab-group label {
   position: absolute;
   transform: translateY(6px);
   left: 13px;
@@ -815,23 +892,27 @@ label {
   font-size: 22px;
 }
 
-label .req {
+.tab-group label .req {
   margin: 2px;
   color: #1ab188;
 }
 
-label.active {
+.tab-group label.active {
   transform: translateY(50px);
   left: 2px;
   font-size: 14px;
 }
 
-label.active .req {
+.tab-group label.active .req {
   opacity: 0;
 }
 
-label.highlight {
+.tab-group label.highlight {
   color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
 }
 
 input, textarea {
@@ -890,6 +971,7 @@ textarea {
   letter-spacing: .1em;
   background: #1ab188;
   color: #ffffff;
+  font-size: 15px;
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
@@ -901,9 +983,26 @@ textarea {
 .button-block {
   display: block;
   width: 100%;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #1ab188;
+  color: #ffffff;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
 }
 
-.forgot {
+.button-block:hover, .button-block:focus {
+  background: #179b77;
+}
+
+.button-block .forgot {
   margin-top: -20px;
   text-align: right;
 }
