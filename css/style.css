@@ -218,10 +218,26 @@ text-center {
   color: #000;
 }
 
+.donation {
+  height: 50vh;
+  margin-top: 15em;
+}
+
 .donation-h2 {
   text-align: center;
   text-transform: uppercase;
   margin: 1em;
+  font-size: 20em;
+}
+
+.donate-p {
+  text-align: center;
+}
+
+.donate-shop {
+  text-transform: uppercase;
+  color: #fa940b;
+  text-decoration: none;
 }
 
 footer {
@@ -426,6 +442,10 @@ footer {
   }
 }
 
+.donation-h2 {
+  font-size: 50px;
+}
+
 @media only screen and (min-width: 60em) {
   .toggle-btn,
   .close-btn {
@@ -461,6 +481,9 @@ footer {
     font-size: 28px;
     text-align: center;
     color: #000;
+  }
+  .donation-h2 {
+    font-size: 90px;
   }
 }
 

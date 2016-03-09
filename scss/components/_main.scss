@@ -211,10 +211,26 @@ text-center {
 }
 
 //DONATION//
+.donation {
+  height: 50vh;
+  margin-top: 15em;
+}
+
 .donation-h2 {
   text-align: center;
   text-transform: uppercase;
   margin: 1em;
+  font-size: 20em;
+}
+
+.donate-p {
+  text-align: center;
+}
+
+.donate-shop {
+  text-transform: uppercase;
+  color: $mustard-yellow;
+  text-decoration: none;
 }
 
 //FOOTER//
@@ -420,6 +436,10 @@ footer {
 }
 }
 
+.donation-h2 {
+  font-size: 50px;
+}
+
 // Resets page when desktop, even if nav is toggled open//
 @media only screen and (min-width: 60em) {
   .toggle-btn,
@@ -454,6 +474,10 @@ footer {
     font-size: 28px;
     text-align: center;
     color: $black;
+}
+
+.donation-h2 {
+  font-size: 90px;
 }
     
 } //media query//
