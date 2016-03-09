@@ -20,8 +20,9 @@ meta: Neads, National Education for Assistance Dog Services
 		<ul class="blog grid">
 			{% for success in site.categories.success %}
 			<li class="gutter unit xs-1 s-1 m-1 l-1-2">
-				<a href="#" class="blog-post">
+				<a href="{{success.url}}" class="blog-post">
 					<h4 class="push-0">{{success.title}}</h4>
+					<p>{{success.date | date: '%B %d, %Y' }}</p>
 					<img class="pad-t-1-2" src="{{success.image}}">
 					<p class="kilo pad-t-1-2 push-0">{{success.meta}}</p>
 					<p class="bold kilo prompt pad-b">Read more</p>
@@ -38,7 +39,7 @@ meta: Neads, National Education for Assistance Dog Services
 			{% for events in site.categories.events %}
 			<li>
 				<a class="giga" href="#">
-					{{events.title}}
+					<h4>{{events.title}}</h4>
 					<img class="pad-t-1-2" src="{{events.image}}">
 					<p class="mega push-0">{{events.meta}}</p>
 					<p class="bold kilo pad-b">Find out more</p>
