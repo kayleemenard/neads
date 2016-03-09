@@ -6,6 +6,15 @@
   }
 }
 
+.form-login a {
+  text-decoration:none;
+  transition:.5s ease;
+  &:hover {
+    color:$main-dark;
+  }
+}
+
+
 .form-login {
   background:rgba($form-bg,.9);
   padding: 40px;

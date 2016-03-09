@@ -835,6 +835,15 @@ sub {
   color: #179b77;
 }
 
+.form-login a {
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+.form-login a:hover {
+  color: #179b77;
+}
+
 .form-login {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
