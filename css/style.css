@@ -832,7 +832,7 @@ sub {
 }
 
 .form-login a:hover {
-  color: #179b77;
+  color: #e78605;
 }
 
 .form-login a {
@@ -841,7 +841,7 @@ sub {
 }
 
 .form-login a:hover {
-  color: #179b77;
+  color: #e78605;
 }
 
 .form-login {
@@ -881,12 +881,12 @@ sub {
 }
 
 .tab-group li a:hover {
-  background: #179b77;
+  background: #e78605;
   color: #ffffff;
 }
 
 .tab-group .active a {
-  background: #1ab188;
+  background: #fa940b;
   color: #ffffff;
 }
 
@@ -940,7 +940,7 @@ input, textarea {
 
 input:focus, textarea:focus {
   outline: 0;
-  border-color: #1ab188;
+  border-color: #e78605;
 }
 
 textarea {
@@ -978,7 +978,7 @@ textarea {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  background: #1ab188;
+  background: #fa940b;
   color: #ffffff;
   font-size: 15px;
   transition: all 0.5s ease;
@@ -986,7 +986,7 @@ textarea {
 }
 
 .button-login:hover, .button-login:focus {
-  background: #179b77;
+  background: #e78605;
 }
 
 .button-block {
@@ -1000,7 +1000,7 @@ textarea {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  background: #1ab188;
+  background: #fa940b;
   color: #ffffff;
   font-size: 15px;
   transition: all 0.5s ease;
@@ -1008,10 +1008,11 @@ textarea {
 }
 
 .button-block:hover, .button-block:focus {
-  background: #179b77;
+  background: #e78605;
 }
 
 .button-block .forgot {
   margin-top: -20px;
   text-align: right;
+  color: #ccc;
 }

@@ -52,7 +52,7 @@
     }
   }
   .active a {
-    background:$main;
+    background:$mustard-yellow;
     color:$white;
   }
   label {
@@ -104,7 +104,7 @@ input, textarea {
   transition:border-color .25s ease, box-shadow .25s ease;
   &:focus {
     outline:0;
-    border-color:$main;
+    border-color:$main-dark;
   }
 }
 
@@ -144,7 +144,7 @@ textarea {
   font-weight:$bold;
   text-transform:uppercase;
   letter-spacing:.1em;
-  background:$main;
+  background:$mustard-yellow;
   color:$white;
   font-size: 15px;
   transition:all.5s ease;
@@ -165,7 +165,7 @@ textarea {
   font-weight:$bold;
   text-transform:uppercase;
   letter-spacing:.1em;
-  background:$main;
+  background:$mustard-yellow;
   color:$white;
   font-size: 15px;
   transition:all.5s ease;
@@ -178,5 +178,6 @@ textarea {
 .forgot {
   margin-top:-20px;
   text-align:right;
+  color: $light-grey;
 }
 }
