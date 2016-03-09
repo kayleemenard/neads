@@ -33,6 +33,10 @@ a:focus {
   top: -3em;
 }
 
+.skip-links a:focus {
+  top: 0;
+}
+
 body.noscript .navigation {
   position: static;
   right: auto;

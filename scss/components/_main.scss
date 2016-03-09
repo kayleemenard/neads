@@ -29,6 +29,9 @@ a:focus {
     position: absolute;
     top: -3em;
   }
+  a:focus {
+    top: 0;
+  }
 }
    
 body.noscript .navigation{
