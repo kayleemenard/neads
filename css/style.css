@@ -18,10 +18,6 @@ body.noscript .toggle-btn {
   display: none;
 }
 
-a:focus {
-  outline: 3px solid #000;
-}
-
 .skip-links {
   margin: 0;
   padding: 0;
@@ -151,7 +147,6 @@ nav .current:visited {
 .donate:hover {
   cursor: pointer;
   background-color: #ffffff;
-  text-decoration-color: #000;
 }
 
 .button {
@@ -791,7 +786,7 @@ footer {
   align-self: center;
 }
 
-html {
+suhtml {
   font: 'Titillium Web', sans-serif;
 }
 
@@ -984,16 +979,15 @@ sub {
 }
 
 .form-login a:hover {
-  color: #179b77;
+  color: #ccc;
 }
 
 .form-login {
-  background: rgba(19, 35, 47, 0.9);
+  background: rgba(204, 204, 204, 0.3);
   padding: 40px;
-  max-width: 600px;
+  max-width: 1300px;
   margin: 40px auto;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  font-family: Titillium Web, sans-serif;
 }
 
 .tab-group {
@@ -1012,8 +1006,8 @@ sub {
   display: block;
   text-decoration: none;
   padding: 15px;
-  background: rgba(160, 179, 176, 0.25);
-  color: #a0b3b0;
+  background: rgba(34, 34, 34, 0.2);
+  color: #000;
   font-size: 20px;
   float: left;
   width: 50%;
@@ -1023,12 +1017,12 @@ sub {
 }
 
 .tab-group li a:hover {
-  background: #179b77;
+  background: #c10000;
   color: #ffffff;
 }
 
 .tab-group .active a {
-  background: #1ab188;
+  background: #222;
   color: #ffffff;
 }
 
@@ -1040,7 +1034,7 @@ label {
   position: absolute;
   transform: translateY(6px);
   left: 13px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #000;
   transition: all 0.25s ease;
   -webkit-backface-visibility: hidden;
   pointer-events: none;
@@ -1049,7 +1043,7 @@ label {
 
 label .req {
   margin: 2px;
-  color: #1ab188;
+  color: rgba(204, 204, 204, 0.3);
 }
 
 label.active {
@@ -1063,7 +1057,7 @@ label.active .req {
 }
 
 label.highlight {
-  color: #ffffff;
+  color: #000;
 }
 
 input, textarea {
@@ -1074,25 +1068,26 @@ input, textarea {
   padding: 5px 10px;
   background: none;
   background-image: none;
-  border: 1px solid #a0b3b0;
-  color: #ffffff;
+  border: 1px solid #ccc;
+  color: #000;
   border-radius: 0;
   transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 input:focus, textarea:focus {
   outline: 0;
-  border-color: #1ab188;
+  border-color: #000;
 }
 
 textarea {
-  border: 2px solid #a0b3b0;
+  border: 2px solid #ccc;
   resize: vertical;
 }
 
 .field-wrap {
   position: relative;
   margin-bottom: 40px;
+  font-family: Titillium Web, sans-serif;
 }
 
 .top-row:after {
@@ -1111,31 +1106,17 @@ textarea {
   margin: 0;
 }
 
-.button-login {
-  border: 0;
-  outline: none;
-  border-radius: 0;
-  padding: 15px 0;
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  background: #1ab188;
-  color: #ffffff;
-  transition: all 0.5s ease;
-  -webkit-appearance: none;
-}
-
-.button-login:hover, .button-login:focus {
-  background: #179b77;
-}
-
-.button-block {
-  display: block;
+.btn-gs {
   width: 100%;
+  display: block;
 }
 
 .forgot {
   margin-top: -20px;
   text-align: right;
+  color: #c10000;
+}
+
+.forgot:hover {
+  color: #000;
 }

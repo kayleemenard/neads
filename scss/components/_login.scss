@@ -2,17 +2,16 @@
   text-decoration:none;
   transition:.5s ease;
   &:hover {
-    color:$main-dark;
+    color:$light-grey;
   }
 }
 
 .form-login {
-  background:rgba($form-bg,.9);
+  background:rgba($light-grey,.3);
   padding: 40px;
-  max-width:600px;
+  max-width:1300px;
   margin:40px auto;
-  border-radius:$br;
-  box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+  font-family: $titillium;
 }
 
 .tab-group {
@@ -28,8 +27,8 @@
     display:block;
     text-decoration:none;
     padding:15px;
-    background:rgba($gray-light,.25);
-    color:$gray-light;
+    background:rgba($dark-grey,.20);
+    color:$black;
     font-size:20px;
     float:left;
     width:50%;
@@ -37,12 +36,12 @@
     cursor:pointer;
     transition:.5s ease;
     &:hover {
-      background:$main-dark;
+      background:$red;
       color:$white;
     }
   }
   .active a {
-    background:$main;
+    background:$dark-grey;
     color:$white;
   }
 }
@@ -55,14 +54,14 @@ label {
   position:absolute;
   transform:translateY(6px);
   left:13px;
-  color:rgba($white,.5);
+  color:$black;
   transition:all 0.25s ease;
   -webkit-backface-visibility: hidden;
   pointer-events: none;
   font-size:22px;
   .req {
     margin:2px;
-    color:$main;
+      color: rgba($light-grey,.3);
   }
 }
 
@@ -76,7 +75,7 @@ label.active {
 }
 
 label.highlight {
-  color:$white;
+  color:$black;
 }
 
 input, textarea {
@@ -87,24 +86,25 @@ input, textarea {
   padding:5px 10px;
   background:none;
   background-image:none;
-  border:1px solid $gray-light;
-  color:$white;
+  border:1px solid $light-grey;
+  color:$black;
   border-radius:0;
   transition:border-color .25s ease, box-shadow .25s ease;
-  &:focus {
+    &:focus {
     outline:0;
-    border-color:$main;
+    border-color:$black;
   }
 }
 
 textarea {
-  border:2px solid $gray-light;
+  border:2px solid $light-grey;
   resize: vertical;
 }
 
 .field-wrap {
   position:relative;
   margin-bottom:40px;
+  font-family: $titillium;
 }
 
 .top-row {
@@ -124,30 +124,18 @@ textarea {
   }
 }
 
-.button-login {
-  border:0;
-  outline:none;
-  border-radius:0;
-  padding:15px 0;
-  font-size:2rem;
-  font-weight:$bold;
-  text-transform:uppercase;
-  letter-spacing:.1em;
-  background:$main;
-  color:$white;
-  transition:all.5s ease;
-  -webkit-appearance: none;
-  &:hover, &:focus {
-    background:$main-dark;
-  }
-}
 
-.button-block {
-  display:block;
-  width:100%;
+.btn-gs{
+    width: 100%;
+    display: block;
 }
 
 .forgot {
   margin-top:-20px;
   text-align:right;
+  color: $red;
+}
+
+.forgot:hover {
+    color: $black;
 }
