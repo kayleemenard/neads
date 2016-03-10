@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  word-wrap: break-word !important;
   font-family: Titillium Web, sans-serif;
   margin: 0;
   padding: 0;
@@ -45,11 +46,6 @@ body.noscript .toggle-btn {
   top: 0;
 }
 
-body.noscript .navigation {
-  position: static;
-  right: auto;
-}
-
 header {
   padding: 0 1em;
   height: 7em;
@@ -68,30 +64,6 @@ header {
   position: absolute;
   right: 1em;
   top: 1em;
-}
-
-.navigation ul {
-  padding: 0;
-}
-
-.navigation ul li {
-  list-style-type: none;
-}
-
-.navigation ul li:last-child {
-  color: #ffffff;
-}
-
-.navigation ul li:hover {
-  background-color: #fa940b;
-}
-
-.navigation a {
-  padding: 0.5em 1em;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: #222;
 }
 
 .toggle-btn,
@@ -120,6 +92,83 @@ header {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+#container {
+  margin: 0 auto;
+}
+
+nav {
+  margin: 40px 0;
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  display: block;
+}
+
+li ~ li {
+  border-left: 1px solid #ccc;
+}
+
+nav a {
+  display: block;
+  padding: 0 18px;
+  color: #000;
+  line-height: 45px;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 50px;
+  /* the height of the main nav */
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display: inherit;
+  background-color: #fa940b;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  text-align: center;
+  width: 130px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+  position: relative;
+  top: -40px;
+  right: 50px;
+}
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after {
+  content: ' +';
+}
+
+li > a:only-child:after {
+  content: '';
+}
+
 nav .current,
 nav .current:link,
 nav .current:visited {
@@ -128,6 +177,11 @@ nav .current:visited {
 
 .close-btn {
   margin: 1em;
+}
+
+body.noscript .navigation {
+  position: static;
+  right: auto;
 }
 
 .banner {
@@ -555,6 +609,64 @@ footer {
 }
 
 @media only screen and (min-width: 60em) {
+  #container {
+    margin: 0 auto;
+    float: right;
+  }
+  nav {
+    margin: 50px 0;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  li ~ li {
+    border-left: 1px solid #ccc;
+  }
+  nav a {
+    display: block;
+    padding: 0 18px;
+    color: #000;
+    line-height: 45px;
+    text-decoration: none;
+  }
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    /* the height of the main nav */
+  }
+  /* Display Dropdowns on Hover */
+  nav ul li:hover > ul {
+    display: inherit;
+    background-color: #fa940b;
+  }
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    width: 130px;
+    float: none;
+    display: list-item;
+    position: relative;
+  }
+  /* Second, Third and more Tiers	*/
+  nav ul ul ul li {
+    position: relative;
+    top: -50px;
+    left: 130px;
+  }
+  /* Change this in order to change the Dropdown symbol */
+  li > a:after {
+    content: ' +';
+  }
+  li > a:only-child:after {
+    content: '';
+  }
   .toggle-btn,
   .close-btn {
     display: none;
@@ -563,15 +675,6 @@ footer {
     width: 1px;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
-  }
-  .navigation ul {
-    display: inline-block;
-    position: absolute;
-    right: 1em;
-    top: 1.5em;
-  }
-  .navigation ul li {
-    display: inline-block;
   }
   .intro-wrap {
     bottom: 0;
