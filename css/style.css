@@ -311,11 +311,10 @@ footer {
 }
 
 .resources-banner {
-  background-image: url("/images/child-with-dog.jpg");
+  background-image: url(../images/child-with-dog.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 4em;
 }
 
 .resources-banner-text {
@@ -352,7 +351,11 @@ footer {
 }
 
 .blog {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 1em;
   list-style-type: none;
+  text-decoration: none;
 }
 
 .blog:hover {
@@ -373,25 +376,39 @@ footer {
   max-width: 100%;
 }
 
-.blog-post .prompt {
+.blog-post .prompt-a {
   color: #fa940b;
+}
+
+.event-section {
+  overflow: hidden;
+  background-color: #c1bdba;
 }
 
 .event-post {
   padding-left: 0;
-  padding-right: 1em;
+  list-style-type: none;
+}
+
+.event-post li {
+  background-color: #ffffff;
+  margin-bottom: 1em;
 }
 
 .event-post a {
-  color: #0c7a7a;
   text-decoration: none;
+}
+
+.event-post a h4,
+.event-post a .prompt-b {
+  color: #0c7a7a;
 }
 
 .event-post a p {
   color: #222;
 }
 
-.event-post img {
+.event-post a img {
   width: 100%;
 }
 
@@ -449,10 +466,9 @@ footer {
   .sub-head {
     font-size: 25px;
   }
-}
-
-.donation-h2 {
-  font-size: 50px;
+  .donation-h2 {
+    font-size: 50px;
+  }
 }
 
 @media only screen and (min-width: 60em) {
