@@ -193,6 +193,12 @@ text-center {
     }
 }
 
+.hr {
+    height: 4px;
+    text-align:center;
+    margin: 0 auto;
+}
+
 .btn-map{
     padding: 5px 5px 5px 5px;
     text-decoration: none; 
@@ -207,6 +213,94 @@ text-center {
     background-color:$red;
     color: $black;
 }
+
+// Timeline
+#timeline {
+	width: 100%;
+  margin: 30px auto;
+	position: relative;
+  padding: 0 10px;
+	@include prefix(transition, all .4s ease);
+
+	&:before {
+		content:"";
+		width: 5px;
+		height: 100%;
+		background: $mustard-yellow;
+		left: 50%;
+		top: 0;
+		position: absolute;
+	}
+
+	&:after {
+		content: "";
+		clear: both;
+		display: table;
+		width: 100%;
+	}
+	
+	.timeline-item {
+		margin-bottom: 50px;
+		position: relative;
+		@extend %clearfix;
+
+		.timeline-icon {
+			background: $mustard-yellow;
+			width: 35px;
+			height: 35px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			overflow: hidden;
+			margin-left: -15px;
+			@include prefix(border-radius, 50%);
+
+		}
+
+		.timeline-content {
+			width: 45%;
+			background: $white;
+			padding: 20px;
+			@include prefix(box-shadow, 3px 3px 3px 0 rgba(0,0,0,0.1));
+			@include prefix(border-radius, 0px);
+			@include prefix(transition, all .3s ease);
+
+			h2 {
+				padding: 10px;
+				background: $red;
+				color: $white;
+				margin: -20px -20px 0 -20px;
+				font-weight: 300;
+				@include prefix(border-radius, 0);
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 45%;
+				top: 20px;
+				width: 0; 
+				height: 0; 
+				border-top: 7px solid transparent;
+				border-bottom: 7px solid transparent; 
+				border-left:7px solid $red; 
+			}
+
+			&.right {
+				float: right;
+
+				&:before {
+					content: '';
+					right: 45%;
+					left: inherit;
+					border-left: 0;
+					border-right: 7px solid $red;
+				}
+			}
+		}
+	}
+}
+
 //FOOTER//
 footer {
   background-color: $black;
@@ -378,7 +472,35 @@ footer {
     padding: 0;
     min-height: 800px;
   } //navigation//
-} //media query//
+    
+    //timeline//
+    #timeline {
+		margin: 30px;
+		padding: 0px;
+    width: 90%;
+		&:before {
+			left: 0;
+		}
+		
+		.timeline-item {
+			.timeline-content {
+				width: 90%;
+				float: right;
+				
+				&:before, &.right:before {
+					left: 10%;
+					margin-left: -6px;
+					border-left: 0;
+					border-right: 7px solid $red;
+				}
+			}
+
+			.timeline-icon {
+				left: 0;
+			}
+		}
+} 
+}//media query//
 
 @media only screen and (min-width: 25em) {
   .ft-header {
@@ -407,6 +529,9 @@ footer {
 .sub-head{
     font-size: 25px;
 }
+    #timeline {
+	width: 70%;
+    }
 }
 
 // Resets page when desktop, even if nav is toggled open//
@@ -444,5 +569,7 @@ footer {
     text-align: center;
     color: $black;
 }
-    
-} //media query//
+     #timeline {
+	width: 80%;
+    }
+    } 
