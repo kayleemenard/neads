@@ -17,9 +17,6 @@ body{
   }
 }
 
-a:focus {
-  outline: 3px solid #000;
-}
 
 .skip-links {
   margin: 0;
@@ -141,7 +138,6 @@ nav .current:visited{
 .donate:hover{
     cursor: pointer;
     background-color: $white;
-    text-decoration-color: $black;
 }
 
 
