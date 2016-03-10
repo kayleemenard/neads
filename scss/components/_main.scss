@@ -303,12 +303,10 @@ footer {
 
 // RESOURCES /
 .resources-banner {
-  background-image: url("/images/child-with-dog.jpg");
+  background-image: url(../images/child-with-dog.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  margin-bottom: 4em;
 } 
 
 .resources-banner-text {
@@ -341,7 +339,11 @@ footer {
 }
 
 .blog {
-  list-style-type: none;  
+  margin: 0;
+  padding-left: 0;
+  padding-right: 1em;
+  list-style-type: none; 
+  text-decoration: none; 
   &:hover {
     cursor: pointer;
   }
@@ -357,28 +359,37 @@ footer {
     display: block;
     max-width: 100%;
   }
-  .prompt {
+  .prompt-a {
     color: $mustard-yellow;
   }
 }
 
-.event-post {
-  padding-left: 0;
-  padding-right: 1em;
-  a {
-    color: $greenish-blue;
-    text-decoration: none;
-    p {
-      color: $dark-grey;
-    }
-  }
-  img {
-    width: 100%;
-  }
+.event-section {
+  overflow: hidden;
+  background-color: $body-bg;
 }
 
-
-
+.event-post {
+  padding-left: 0;
+  list-style-type: none;
+  li {
+    background-color: $white;
+    margin-bottom: 1em;
+  }
+  a {
+    text-decoration: none;
+    h4,
+    .prompt-b {
+        color: $greenish-blue;
+      }
+    p {
+      color: $dark-grey;
+    }  
+    img {
+      width: 100%;
+    }
+  } 
+}
 
 // Media Queries //
 
@@ -428,30 +439,26 @@ footer {
   .ft-header {
     text-align: left;
   }
-    
-   .intro-wrap {
-        bottom: 0;
-        position:  absolute;
-        margin-bottom: 4em;
-        margin-left: 8em;
-        margin-right: 8em;
-    }
-    
-    .intro{
+ .intro-wrap {
+    bottom: 0;
+    position:  absolute;
+    margin-bottom: 4em;
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+  .intro{
     font-size: 40px;
-   
-}
+  }
 
-.sub-head{
+  .sub-head{
     font-size: 25px;
-}
+  }
+
+  .donation-h2 {
+    font-size: 50px;
+  }
 }
 
-.donation-h2 {
-  font-size: 50px;
-}
-
-// Resets page when desktop, even if nav is toggled open//
 @media only screen and (min-width: 60em) {
   .toggle-btn,
   .close-btn{
@@ -467,32 +474,32 @@ footer {
       display: inline-block;
     }
   }
-    .intro-wrap {
+  .intro-wrap {
         bottom: 0;
         position:  absolute;
         margin-bottom: 7em;
         margin-left: 8em; 
         margin-right: 8em;
-    }
+  }
     
-    .intro{
+  .intro{
     font-size: 55px;
     text-align: center;
     color: $black;
-}
+  }
 
-.sub-head{
+  .sub-head{
     font-size: 28px;
     text-align: center;
     color: $black;
-}
+  }
 
-.donation-h2 {
-  font-size: 90px;
-}
+  .donation-h2 {
+    font-size: 90px;
+  }
 
-.donate-p {
-  font-size: 30px;
-}
+  .donate-p {
+    font-size: 30px;
+  }
     
 } //media query//
