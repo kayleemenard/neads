@@ -573,3 +573,24 @@ footer {
 	width: 80%;
     }
     } 
+
+@media only screen and (min-width: 90em) {
+    
+    .intro-wrap {
+        bottom: 0;
+        position:  absolute;
+        margin-bottom: 11em;
+        margin-left: 20em; 
+        margin-right: a;
+    }
+    
+    .intro{
+    font-size: 55px;
+    text-align: center;
+}
+
+.sub-head{
+    font-size: 28px;
+    text-align: center;
+}
+}
