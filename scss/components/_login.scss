@@ -6,12 +6,24 @@
   }
 }
 
+.form-login a {
+  text-decoration:none;
+  transition:.5s ease;
+  &:hover {
+    color:$black;
+  }
+}
+
+
 .form-login {
   background:rgba($light-grey,.3);
   padding: 40px;
   max-width:1300px;
   margin:40px auto;
   font-family: $titillium;
+  border-radius:$br;
+  color: white;
+  box-shadow:0 4px 10px 4px rgba($light-grey,.3);
 }
 
 .tab-group {
@@ -42,15 +54,10 @@
   }
   .active a {
     background:$dark-grey;
+    background:$mustard-yellow;
     color:$white;
   }
-}
-
-.tab-content > div:last-child {
-  display:none;
-}
-
-label {
+  label {
   position:absolute;
   transform:translateY(6px);
   left:13px;
@@ -77,6 +84,13 @@ label.active {
 label.highlight {
   color:$black;
 }
+}
+
+.tab-content > div:last-child {
+  display:none;
+}
+
+
 
 input, textarea {
   font-size:22px;
@@ -128,7 +142,47 @@ textarea {
 .btn-gs{
     width: 100%;
     display: block;
+.button-login {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:$bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:$mustard-yellow;
+  color:$white;
+  font-size: 15px;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+  &:hover, &:focus {
+    background:$light-grey;
+  }
 }
+}
+
+.button-block {
+  display:block;
+  width:100%;
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:$bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:$mustard-yellow;
+  color:$white;
+  font-size: 15px;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+  &:hover, &:focus {
+    background:$black;
+
+}
+    }
 
 .forgot {
   margin-top:-20px;
