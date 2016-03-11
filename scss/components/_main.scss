@@ -101,7 +101,7 @@ nav ul li {
 	display:block;
 }
 
-li~li { border-left: 1px solid $light-grey}
+li { border-left: 1px solid $light-grey}
 
 nav a {
 	display:block;
@@ -109,6 +109,11 @@ nav a {
 	color:$black;
 	line-height: 45px;
 	text-decoration:none;
+}
+
+nav li { 
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav li:hover { 
@@ -122,6 +127,9 @@ nav ul ul {
 	display: none;
 	position: absolute; 
 	top: 50px; /* the height of the main nav */
+  padding: 0;
+    left: 117px
+    
 }
 	
 /* Display Dropdowns on Hover */
@@ -132,18 +140,20 @@ nav ul li:hover > ul {
 	
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-    text-align: center; 
-	width:130px;
-	float:none;
+    text-align: left; 
+	width:170px;
 	display:list-item;
 	position: relative;
+    border-left: none;
+    
 }
 
 /* Second, Third and more Tiers	*/
 nav ul ul ul li {
 	position: relative;
 	top:-40px; 
-	right:50px;
+	left:40px;
+    
 }
 
 	
@@ -638,6 +648,17 @@ footer {
   .donation-h2 {
     font-size: 50px;
   }
+    
+    nav ul ul {
+    text-align: center; 
+	display: none;
+	position: absolute; 
+	top: 50px; /* the height of the main nav */
+    padding: 0;
+    left: 200px; 
+    
+}
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -681,6 +702,8 @@ nav ul ul {
 	display: none;
 	position: absolute; 
 	top: 50px; /* the height of the main nav */
+    padding: 0;
+    left: 117px;
 }
 	
 /* Display Dropdowns on Hover */
