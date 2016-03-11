@@ -1,3 +1,10 @@
+#timeline .timeline-item:after, #timeline .timeline-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
 html {
   box-sizing: border-box;
   text-size-adjust: 100%;
@@ -8,6 +15,7 @@ html {
 }
 
 body {
+  word-wrap: break-word !important;
   font-family: Titillium Web, sans-serif;
   margin: 0;
   padding: 0;
@@ -16,10 +24,6 @@ body {
 body.noscript .close-btn,
 body.noscript .toggle-btn {
   display: none;
-}
-
-a:focus {
-  outline: 3px solid #000;
 }
 
 .skip-links {
@@ -42,11 +46,6 @@ a:focus {
   top: 0;
 }
 
-body.noscript .navigation {
-  position: static;
-  right: auto;
-}
-
 header {
   padding: 0 1em;
   height: 7em;
@@ -65,30 +64,6 @@ header {
   position: absolute;
   right: 1em;
   top: 1em;
-}
-
-.navigation ul {
-  padding: 0;
-}
-
-.navigation ul li {
-  list-style-type: none;
-}
-
-.navigation ul li:last-child {
-  color: #ffffff;
-}
-
-.navigation ul li:hover {
-  background-color: #fa940b;
-}
-
-.navigation a {
-  padding: 0.5em 1em;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: #222;
 }
 
 .toggle-btn,
@@ -117,6 +92,83 @@ header {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+#container {
+  margin: 0 auto;
+}
+
+nav {
+  margin: 40px 0;
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  display: block;
+}
+
+li ~ li {
+  border-left: 1px solid #ccc;
+}
+
+nav a {
+  display: block;
+  padding: 0 18px;
+  color: #000;
+  line-height: 45px;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 50px;
+  /* the height of the main nav */
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display: inherit;
+  background-color: #fa940b;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  text-align: center;
+  width: 130px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+  position: relative;
+  top: -40px;
+  right: 50px;
+}
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after {
+  content: ' +';
+}
+
+li > a:only-child:after {
+  content: '';
+}
+
 nav .current,
 nav .current:link,
 nav .current:visited {
@@ -125,6 +177,11 @@ nav .current:visited {
 
 .close-btn {
   margin: 1em;
+}
+
+body.noscript .navigation {
+  position: static;
+  right: auto;
 }
 
 .banner {
@@ -151,7 +208,6 @@ nav .current:visited {
 .donate:hover {
   cursor: pointer;
   background-color: #ffffff;
-  text-decoration-color: #000;
 }
 
 .button {
@@ -202,6 +258,12 @@ text-center {
   list-style-type: none;
 }
 
+.hr {
+  height: 4px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .btn-map {
   padding: 5px 5px 5px 5px;
   text-decoration: none;
@@ -216,6 +278,108 @@ text-center {
   cursor: pointer;
   background-color: #c10000;
   color: #000;
+}
+
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 10px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#timeline:before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  background: #fa940b;
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+
+#timeline:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+
+#timeline .timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#timeline .timeline-item .timeline-icon {
+  background: #fa940b;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#timeline .timeline-item .timeline-content {
+  width: 45%;
+  background: #ffffff;
+  padding: 20px;
+  -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#timeline .timeline-item .timeline-content h2 {
+  padding: 10px;
+  background: #c10000;
+  color: #ffffff;
+  margin: -20px -20px 0 -20px;
+  font-weight: 300;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+#timeline .timeline-item .timeline-content:before {
+  content: '';
+  position: absolute;
+  left: 45%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #c10000;
+}
+
+#timeline .timeline-item .timeline-content.right {
+  float: right;
+}
+
+#timeline .timeline-item .timeline-content.right:before {
+  content: '';
+  right: 45%;
+  left: inherit;
+  border-left: 0;
+  border-right: 7px solid #c10000;
 }
 
 .donation {
@@ -441,6 +605,27 @@ footer {
     padding: 0;
     min-height: 800px;
   }
+  #timeline {
+    margin: 30px;
+    padding: 0px;
+    width: 90%;
+  }
+  #timeline:before {
+    left: 0;
+  }
+  #timeline .timeline-item .timeline-content {
+    width: 90%;
+    float: right;
+  }
+  #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
+    left: 10%;
+    margin-left: -6px;
+    border-left: 0;
+    border-right: 7px solid #c10000;
+  }
+  #timeline .timeline-item .timeline-icon {
+    left: 0;
+  }
 }
 
 @media only screen and (min-width: 25em) {
@@ -450,6 +635,9 @@ footer {
 }
 
 @media only screen and (min-width: 45em) {
+  .navigation ul {
+    list-style: none;
+  }
   .ft-header {
     text-align: left;
   }
@@ -466,12 +654,73 @@ footer {
   .sub-head {
     font-size: 25px;
   }
+  #timeline {
+    width: 70%;
+  }
   .donation-h2 {
     font-size: 50px;
   }
 }
 
 @media only screen and (min-width: 60em) {
+  #container {
+    margin: 0 auto;
+    float: right;
+  }
+  nav {
+    margin: 50px 0;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  li ~ li {
+    border-left: 1px solid #ccc;
+  }
+  nav a {
+    display: block;
+    padding: 0 18px;
+    color: #000;
+    line-height: 45px;
+    text-decoration: none;
+  }
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    /* the height of the main nav */
+  }
+  /* Display Dropdowns on Hover */
+  nav ul li:hover > ul {
+    display: inherit;
+    background-color: #fa940b;
+  }
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    width: 130px;
+    float: none;
+    display: list-item;
+    position: relative;
+  }
+  /* Second, Third and more Tiers	*/
+  nav ul ul ul li {
+    position: relative;
+    top: -50px;
+    left: 130px;
+  }
+  /* Change this in order to change the Dropdown symbol */
+  li > a:after {
+    content: ' +';
+  }
+  li > a:only-child:after {
+    content: '';
+  }
   .toggle-btn,
   .close-btn {
     display: none;
@@ -480,15 +729,6 @@ footer {
     width: 1px;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
-  }
-  .navigation ul {
-    display: inline-block;
-    position: absolute;
-    right: 1em;
-    top: 1.5em;
-  }
-  .navigation ul li {
-    display: inline-block;
   }
   .intro-wrap {
     bottom: 0;
@@ -507,11 +747,32 @@ footer {
     text-align: center;
     color: #000;
   }
+  #timeline {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .intro-wrap {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 11em;
+    margin-left: 20em;
+    margin-right: a;
+  }
+  .intro {
+    font-size: 55px;
+    text-align: center;
+  }
   .donation-h2 {
     font-size: 90px;
   }
   .donate-p {
     font-size: 30px;
+  }
+  .sub-head {
+    font-size: 28px;
+    text-align: center;
   }
 }
 
@@ -848,7 +1109,7 @@ footer {
   align-self: center;
 }
 
-html {
+suhtml {
   font: 'Titillium Web', sans-serif;
 }
 
@@ -1041,7 +1302,7 @@ sub {
 }
 
 .form-login a:hover {
-  color: #b56904;
+  color: #ccc;
 }
 
 .form-login a {
@@ -1050,17 +1311,18 @@ sub {
 }
 
 .form-login a:hover {
-  color: #b56904;
+  color: #000;
 }
 
 .form-login {
-  background: rgba(19, 35, 47, 0.9);
+  background: rgba(204, 204, 204, 0.3);
   padding: 40px;
-  max-width: 600px;
+  max-width: 1300px;
   margin: 40px auto;
+  font-family: Titillium Web, sans-serif;
   border-radius: 4px;
   color: white;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  box-shadow: 0 4px 10px 4px rgba(204, 204, 204, 0.3);
 }
 
 .tab-group {
@@ -1079,8 +1341,8 @@ sub {
   display: block;
   text-decoration: none;
   padding: 15px;
-  background: rgba(160, 179, 176, 0.25);
-  color: #a0b3b0;
+  background: rgba(34, 34, 34, 0.2);
+  color: #000;
   font-size: 20px;
   float: left;
   width: 50%;
@@ -1090,11 +1352,12 @@ sub {
 }
 
 .tab-group li a:hover {
-  background: #b56904;
+  background: #c10000;
   color: #ffffff;
 }
 
 .tab-group .active a {
+  background: #222;
   background: #fa940b;
   color: #ffffff;
 }
@@ -1103,7 +1366,7 @@ sub {
   position: absolute;
   transform: translateY(6px);
   left: 13px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #000;
   transition: all 0.25s ease;
   -webkit-backface-visibility: hidden;
   pointer-events: none;
@@ -1112,7 +1375,7 @@ sub {
 
 .tab-group label .req {
   margin: 2px;
-  color: #1ab188;
+  color: rgba(204, 204, 204, 0.3);
 }
 
 .tab-group label.active {
@@ -1126,7 +1389,7 @@ sub {
 }
 
 .tab-group label.highlight {
-  color: #ffffff;
+  color: #000;
 }
 
 .tab-content > div:last-child {
@@ -1141,25 +1404,26 @@ input, textarea {
   padding: 5px 10px;
   background: none;
   background-image: none;
-  border: 1px solid #a0b3b0;
-  color: #ffffff;
+  border: 1px solid #ccc;
+  color: #000;
   border-radius: 0;
   transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 input:focus, textarea:focus {
   outline: 0;
-  border-color: #b56904;
+  border-color: #000;
 }
 
 textarea {
-  border: 2px solid #a0b3b0;
+  border: 2px solid #ccc;
   resize: vertical;
 }
 
 .field-wrap {
   position: relative;
   margin-bottom: 40px;
+  font-family: Titillium Web, sans-serif;
 }
 
 .top-row:after {
@@ -1178,7 +1442,12 @@ textarea {
   margin: 0;
 }
 
-.button-login {
+.btn-gs {
+  width: 100%;
+  display: block;
+}
+
+.btn-gs .button-login {
   border: 0;
   outline: none;
   border-radius: 0;
@@ -1194,8 +1463,8 @@ textarea {
   -webkit-appearance: none;
 }
 
-.button-login:hover, .button-login:focus {
-  background: #b56904;
+.btn-gs .button-login:hover, .btn-gs .button-login:focus {
+  background: #ccc;
 }
 
 .button-block {
@@ -1217,11 +1486,15 @@ textarea {
 }
 
 .button-block:hover, .button-block:focus {
-  background: #b56904;
+  background: #000;
 }
 
-.button-block .forgot {
+.forgot {
   margin-top: -20px;
   text-align: right;
-  color: #ccc;
+  color: #c10000;
+}
+
+.forgot:hover {
+  color: #000;
 }
