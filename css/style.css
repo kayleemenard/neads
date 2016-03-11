@@ -382,6 +382,37 @@ text-center {
   border-right: 7px solid #c10000;
 }
 
+.donation {
+  min-height: 50em;
+  padding-top: 15em;
+  background-image: url(../images/elderlylady-and-dog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.donation-content {
+  background-color: rgba(192, 192, 192, 0.3);
+}
+
+.donation-h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1em;
+  font-size: 20em;
+}
+
+.donate-p {
+  text-align: center;
+  margin-top: -2em;
+}
+
+.donate-shop {
+  text-transform: uppercase;
+  color: #fa940b;
+  text-decoration: none;
+}
+
 footer {
   background-color: #000;
 }
@@ -444,11 +475,10 @@ footer {
 }
 
 .resources-banner {
-  background-image: url("/images/child-with-dog.jpg");
+  background-image: url(../images/child-with-dog.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 4em;
 }
 
 .resources-banner-text {
@@ -485,7 +515,11 @@ footer {
 }
 
 .blog {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 1em;
   list-style-type: none;
+  text-decoration: none;
 }
 
 .blog:hover {
@@ -506,25 +540,39 @@ footer {
   max-width: 100%;
 }
 
-.blog-post .prompt {
+.blog-post .prompt-a {
   color: #fa940b;
+}
+
+.event-section {
+  overflow: hidden;
+  background-color: #c1bdba;
 }
 
 .event-post {
   padding-left: 0;
-  padding-right: 1em;
+  list-style-type: none;
+}
+
+.event-post li {
+  background-color: #ffffff;
+  margin-bottom: 1em;
 }
 
 .event-post a {
-  color: #0c7a7a;
   text-decoration: none;
+}
+
+.event-post a h4,
+.event-post a .prompt-b {
+  color: #0c7a7a;
 }
 
 .event-post a p {
   color: #222;
 }
 
-.event-post img {
+.event-post a img {
   width: 100%;
 }
 
@@ -587,6 +635,9 @@ footer {
 }
 
 @media only screen and (min-width: 45em) {
+  .navigation ul {
+    list-style: none;
+  }
   .ft-header {
     text-align: left;
   }
@@ -605,6 +656,9 @@ footer {
   }
   #timeline {
     width: 70%;
+  }
+  .donation-h2 {
+    font-size: 50px;
   }
 }
 
@@ -709,6 +763,12 @@ footer {
   .intro {
     font-size: 55px;
     text-align: center;
+  }
+  .donation-h2 {
+    font-size: 90px;
+  }
+  .donate-p {
+    font-size: 30px;
   }
   .sub-head {
     font-size: 28px;
@@ -1245,12 +1305,24 @@ sub {
   color: #ccc;
 }
 
+.form-login a {
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+.form-login a:hover {
+  color: #000;
+}
+
 .form-login {
   background: rgba(204, 204, 204, 0.3);
   padding: 40px;
   max-width: 1300px;
   margin: 40px auto;
   font-family: Titillium Web, sans-serif;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 0 4px 10px 4px rgba(204, 204, 204, 0.3);
 }
 
 .tab-group {
@@ -1286,14 +1358,11 @@ sub {
 
 .tab-group .active a {
   background: #222;
+  background: #fa940b;
   color: #ffffff;
 }
 
-.tab-content > div:last-child {
-  display: none;
-}
-
-label {
+.tab-group label {
   position: absolute;
   transform: translateY(6px);
   left: 13px;
@@ -1304,23 +1373,27 @@ label {
   font-size: 22px;
 }
 
-label .req {
+.tab-group label .req {
   margin: 2px;
   color: rgba(204, 204, 204, 0.3);
 }
 
-label.active {
+.tab-group label.active {
   transform: translateY(50px);
   left: 2px;
   font-size: 14px;
 }
 
-label.active .req {
+.tab-group label.active .req {
   opacity: 0;
 }
 
-label.highlight {
+.tab-group label.highlight {
   color: #000;
+}
+
+.tab-content > div:last-child {
+  display: none;
 }
 
 input, textarea {
@@ -1372,6 +1445,48 @@ textarea {
 .btn-gs {
   width: 100%;
   display: block;
+}
+
+.btn-gs .button-login {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #fa940b;
+  color: #ffffff;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+
+.btn-gs .button-login:hover, .btn-gs .button-login:focus {
+  background: #ccc;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #fa940b;
+  color: #ffffff;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+
+.button-block:hover, .button-block:focus {
+  background: #000;
 }
 
 .forgot {
